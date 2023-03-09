@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="/styles/index.css" rel="stylesheet" />
+  <script src = "index.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+
+<body class="bg-gradient-to-r flex flex-col items-center from-[#96DEDA] to-[#50C9C3]">
+
+
+
+
+  <!-- Landing Section -->
+  <section class="h-screen space-y- max-w-[1440px] md:px-16 px-8">
+    <!-- Navigator -->
+    <nav class="py-16 flex items-center justify-between text-xs md:text-sm lg:text-lg">
+      <div>
+        <img src="./assets/images/CHUKI.png" width="100px" height="52px" type="button" onClick="refreshPage()" />
+      </div>
+      <div class="hidden lg:inline">
+        <ul class="flex space-x-16">
+          <li class="cursor-pointer">
+            <a href="#" class="link">Home</a>
+          </li>
+          </li>
+          <li class="cursor-pointer opacity-50 hover:opacity-100">
+            <a href="/gallery.html" class="link">Gallery</a>
+          </li>
+          <li class="cursor-pointer opacity-50 hover:opacity-100">
+            <a href="#me" class="link">About Me</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <a href="#contact"
+          class="bg-black hover:bg-white hover:text-black curs text-white py-4 px-8">
+          Contact Me
+        </a>
+        <div class="lg:hidden">
+          <img src="./assets/icons/Menu.png" width="50px" height="50px" />
+        </div>
+      </div>
+    </nav>
+    <!-- Picture & Heading -->
+    <div class="lg:grid grid-flow-row space-x-5 grid-cols-12">
+      <div class="col-span-7 flex flex-col lg:pt-24 xl:pt-40 items-center md:pt-24 pt-8">
+        <!-- <p class="thin-font text-3xl font-thin flex text-start w-full">Aspiring</p> -->
+        <div class="flex lg:h-32 items-center space-x-5 w-full justify-center items-center">
+          <p class="xl:text-[8rem] lg:text-[6rem] md:text-[7.5rem] black-font text-white p-0 text-6xl" id="my-text">
+            Media
+          </p>
+          <p class="lg:text-7xl black-font flex lg:pt-12 pt-6 text-4xl" id="my-text2">&</p>
+          <p class="xl:text-[8rem] lg:text-[6rem] md:text-[7.5rem] black-font text-white p-0 text-6xl" id="my-text3">
+            TV
+          </p>
+        </div>
+        <p class="xl:text-[7rem] lg:text-[5.5rem] md:text-[6.5rem] black-font text-Black p-0 text-6xl"
+          id="my-textPersonality">
+          Personality
+        </p>
+
+        <p class="text-center opacity-60 lg:px-16 pt-6 text-sm md:text-base md:py-16" id="HostingParagraph">
+          <span>Hosting Eswatini Lifestyle, Friday Night Lights and has co-hosted</span>
+          <span>This Weekend Eswatini on Swazi TV, the number one TV station in</span>
+          <span>Eswatini.</span>
+        </p>
+        <div class="hidden lg:inline">
+          <div class="w-full justify-center flex">
+              <a href="#contact"
+              class="bg-white bg-opacity-30 shadow-sm py-2 text-lg px-24 mt-16 max-w-xs hover:bg-black hover:text-white transition ease-in-out"
+             >
+              Hire Me
+            </a>
+            
+          </div>
+        </div>
+
+        <div class="lg:py-16 py-8 md:py-12 xl:pt-28" id="socialsDiv">
+          <ul class="flex justify-between space-x-10 px-4 xl:space-x-24 lg:space-x-16 md:space-x-20 lg:px-16">
+            <li class="hover:scale-150 ease-in-out">
+              <a href="https://www.facebook.com/chuki.dlamini">
+                <img src="./assets/images/Facebook - Negative.png" width="50px" height="50px" />
+              </a>
+            </li>
+            <li class="hover:scale-150 ease-in-out">
+              <a href="https://instagram.com/ch00_ki.e?igshid=YmMyMTA2M2Y=">
+                <img src="./assets/images/Instagram - Negative.png" width="50px" height="50px" />
+              </a>
+            </li>
+            <li class="hover:scale-150 ease-in-out">
+              <a href="https://twitter.com/chuki_dlamini?t=fvTYWhN6tepQtMe-UZbs9Q&s=08">
+                <img src="./assets/images/Twitter - Negative.png" width="50px" height="50px" />
+              </a>
+            </li>
+            <li class="hover:scale-150 ease-in-out">
+              <a href="https://wa.link/b5k6rg">
+                <img src="./assets/images/Vector.png" width="40px" height="40px" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-span-5 flex justify-end px-6" id="#sidePicture">
+        <img src="./assets/images/ChukiHome.png" width="100%" height="100%" class="object-contain" />
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full space-y-24 max-w-[1440px] md:px-16 px-8">
+    <div class="grid grid-flow-row grid-cols-12">
+      <div class="flex col-span-11 items-center space-x-5">
+        <div>
+          <h1 class="font-semibold text-3xl">ABOUT</h1>
+          <p class="font-bold text-7xl text-white">ME</p>
+        </div>
+        <div class="h-1 w-48 bg-white"></div>
+      </div>
+
+      <div class="flex items-center space-x-2.5">
+        <div class="h-8 w-8 rounded-full bg-white"></div>
+        <p class="text-xl">REC</p>
+      </div>
+    </div>
+
+    <div class="relative">
+      <div class="h-1 w-48 bg-white absolute"></div>
+      <div class="h-48 w-1 bg-white absolute"></div>
+      <p class="text-white absolute right-0 text-lg -top-5">
+        PASSIONATE, AMBITIOUS, SELF-DRIVEN
+      </p>
+      <div class="pt-12 flex space-x-6 justify-between">
+        <div>
+          <img src="./assets/images/CHUKI2.png" width="600px" height="800px" />
+        </div>
+        <div id="me" class="max-w-2xl space-y-20">
+          <ul class="space-y-5">
+            <li>
+              <p>
+                I am Chuki Dlamini, a Swati aspiring TV and media personality
+                known for hosting Eswatini Lifestyle, Friday Night Lights and
+                co-hosted This Weekend Eswatini on Swazi TV, the number one TV
+                station in Eswatini.
+              </p>
+            </li>
+            <li>
+              <p>
+                Lately, I have ventured into MC’ng; Little Miss Eswatini being
+                my latest gig.
+              </p>
+            </li>
+            <li>
+              <p>
+                I began performing art in public at a tender age with
+                performances ranging from drama, dance, poetry, public
+                speaking and debate.
+              </p>
+            </li>
+            <li>
+              <p>
+                I do not know where this fire in my soul comes from , I do not
+                know what fuels the passion to do my job and to want to do it
+                every waking day.
+              </p>
+            </li>
+            <li>
+              <p>
+                But I do know where part of my confidence comes from. It comes
+                from the foundations of the love of the Arts laid by the
+                people around me.
+              </p>
+            </li>
+            <li>
+              <p>
+                She put me on so many play stages as a toddler ,by the time I
+                hit puberty , stage fight had turned from devastatingly
+                crippling monster it used to be to minor nuisance , a shiver I
+                can swallow as I clear my throat.
+              </p>
+            </li>
+            <li>
+              <p>
+                Especially my aunt ,She was a language teacher ,devout
+                Christian and always insistent ,I take the stage on every
+                little church play , school debate, slam poetry session .
+              </p>
+            </li>
+            <li>
+              <p>
+                She put me on so many play stages as a toddler ,by the time I
+                hit puberty , stage fight had turned from devastatingly
+                crippling monster it used to be to minor nuisance , a shiver I
+                can swallow as I clear my throat
+              </p>
+            </li>
+          </ul>
+          <p class="font-semibold text-white text-8xl">"I AM CHUKI"</p>
+        </div>
+      </div>
+      <div class="h-48 w-1 bg-white absolute right-0 bottom-0"></div>
+      <div class="h-1 w-48 bg-white absolute right-0"></div>
+    </div>
+  </section>
+ 
+    </div>
+  <section class="my-28 space-y-20 max-w-[1440px]">
+    <div>
+      <img src="./assets/images/CHUKI3.png" width="1500px" height="800px" />
+    </div>
+    <div class="bg-white py-6 bg-opacity-40">
+       <div id="scroll-container">
+    <div id="scroll-text" class="text-4xl md:text-8xl flex space-x-10 font-bold"><p>LETS WORK</p><p class="text-white ">LETS WORK</p>
+  </div>
+    </div>
+    <div id="scroll-container-1">
+      <div id="scroll-text-1" class="text-4xl md:text-8xl flex space-x-10 font-bold"><p>LETS WORK</p><p class="text-white">LETS WORK</p>
+    </div>
+      </div>
+    </div>
+  </section>
+  <section class="w-full space-y-24 max-w-[1440px] md:px-16 px-8">
+    <div id="contact" class="w-full flex">
+      <div class="flex w-full items-center space-x-5">
+        <div class="">
+          <h1 class="font-semibold text-3xl">CONTACT</h1>
+          <p class="font-bold text-7xl text-white">ME</p>
+        </div>
+        <div class="h-1 w-48 bg-white"></div>
+      </div>
+      <div>
+        <img src="./assets/images/MOVIE.png" width="200px" height="260px" />
+      </div>
+    </div>
+
+    <div class="space-y-5 pb-6">
+      <p class="text-xl">SEND AN EMAIL</p>
+      <div class="flex">
+        <form onsubmit="sendMail();return false"  class="w-full">
+          <div class="flex w-full space-x-24 justify-between ">
+            <div class="w-full space-y-5">
+              <div class="flex flex-col bg-opacity-60 w-full">
+                <label for="full_name">Full Name</label>
+                <input placeholder="" class="w-full bg-opacity-60 bg-white h-16" id="from_name" />
+              </div>
+              <div class="flex flex-col  w-full">
+                <label for="full_name">What are you intrested in?</label>
+                <input placeholder="" class="w-full bg-opacity-60 bg-white h-16" id="message" />
+              </div>
+              <div class="flex flex-col  w-full">
+                <label for="full_name">Tell me more about your project</label>
+                <input placeholder="" class="w-full bg-opacity-60 bg-white h-32" id="message2" />
+              </div>
+
+            </div>
+            <div class="w-full space-y-5">
+              <div class="flex flex-col  w-full">
+                <label for="full_name">Email Address</label>
+                <input type="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email"
+                  class="w-full bg-opacity-60 bg-white h-16" id=from_email />
+              </div>
+
+
+
+              <button type="submit"
+                class="text-[#96DEDA] bg-black py-2 px-8 rounded-sm hover:bg-white hover:text-black ease-in">
+                <p>Send Email</p>
+              </button>
+
+
+              <!--button class="mdc-button mdc-button--raised foo-button"
+                >
+                  <div class="mdc-button__ripple"></div>
+                  <span class="mdc-button__label">Send Email</span>
+                </button-->
+
+
+              <!--div class="flex flex-col bg-opacity-60 w-full">
+                  <label for="full_name">What is your budget? *</label>
+                  <input placeholder="" class="w-full bg-opacity-60 bg-white h-16" />
+                </div>
+              </div-->
+
+            </div>
+        </form>
+      </div>
+    </div>
+    <div class="flex items-center space-x-6 pb-24">
+      <p>CALL:</p>
+      <div class="flex space-x-5 text-2xl">
+        <a href="tel:+26876810638">7681 0638</a>
+        <a href="tel:+26879810638">7981 0638</a>
+
+      </div>
+    </div>
+  </section>
+  <section class="space-y-12 text-xl pb-6 max-w-[1440px] md:px-16 px-8">
+    <img src="./assets/images/CHUKI5.png" width="1700px" height="197px" />
+    <div class="flex justify-between ">
+      <p>COPYRIGHT RESERVED</p>
+      <a href="mayo-bete.vercel.app">
+        <p>WEBSITE BY: MAYO</p>
+      </a>
+    </div>
+  </section>
+
+  <!--- Make  Media  Text fly in from the floor
+    -->
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("FnqoA2Jka80m1ICm1");
+    })();
+  </script>
+
+
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+    integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+  <script>
+
+
+
+
+    //ADD CSS PLUGIN TO MAKE SPAN ELEMENT HAVE A SICKER REVEAL 
+    var rule = CSSRulePlugin.getRule("span:after");
+    gsap.to(rule, { cssRule: { scaleY: 0 }, duration: 1 });  // kills white overlay(Reduced to height of Zer0) 
+
+
+
+    /***************************************************
+     *  The "Hosting paragraph, The socials  buttons 
+     *      and the Hire Me button all have the same
+     *      stagger animation + vertical text Reveal"
+     ***************************************************/
+    gsap.from(
+      "#HostingParagraph", {
+      duration: 1,
+      y: -50,
+      opacity: 0,
+    }
+    )
+
+    gsap.from(
+      "#HireMeButton", {
+      duration: 1,
+      y: -50,
+      opacity: 0,
+      delay: 0.6
+    }
+    )
+
+
+    gsap.from(
+      "#socialsDiv", {
+      duration: 1,
+      y: -50,
+      opacity: 0,
+      delay: 1.2
+    }
+    )
+
+
+
+
+
+    /************************************
+     *animates "Main Side Picture" 
+     *            comes in from the right 
+     **************************************/
+    gsap.from(
+      "#sidePicture", {
+      duration: 1,
+      backgroundPosition: '200px 0px',
+      opacity: 0,
+      delay: 1.4
+    }
+    )
+
+    /**********************************
+     * animates "Personality" Text
+     **********************************/
+    gsap.from("#my-textPersonality", {
+      opacity: 0,
+      duration: 1,
+      y: 50,
+      delay: 1.1
+    })
+
+
+
+    /************************************
+     * animates the first text "Media"
+     **************************************/
+    const myText = new SplitType('#my-text')
+    gsap.to('.char', {
+      y: 0,
+      stagger: 0.05,
+      delay: 0.2,
+      duration: .1
+    })
+
+    /*****************************************
+    *  animates  the  third Text "&"
+    ********************************************/
+    const myText2 = new SplitType('#my-text2')
+    gsap.to('.char', {
+      y: 0,
+      stagger: 0.05,
+      delay: 0.2,
+      duration: .1
+    }
+    )
+    /************************************
+     * animates  the  third Text "TV" 
+     **********************************/
+    const myText3 = new SplitType('#my-text3')
+    gsap.to('.char', {
+      y: 0,
+      stagger: 0.05,
+      delay: 0.2,
+      duration: .1
+    })
+    function refreshPage() {
+      window.location.reload();
+    }
+
+
+  </script>
+</body>
+
+</html>
